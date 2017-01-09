@@ -3,15 +3,16 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  <name> -- <role> -- <github>
+  Francisco Javier Arribas Fernández -- creator/founder -- @mdo2
 
 # THANKS
 
   <name>
-  PatrickJS -- @gdi2290
-  AngularClass -- @AngularClass
+  Francisco Javier Arribas Fernández -- @mdo2
+  PollMe -- @PollMe
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3
+  HTML5, Less, CSS3
   Angular2, TypeScript, Webpack
