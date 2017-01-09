@@ -1,15 +1,24 @@
 {
   "name": "poll-me-webapp",
-  "version": "5.4.1",
-  "description": "",
+  "version": "0.0.0",
+  "description": "A single page application to view, edit and fill any kind of PollMe quiz or survey",
   "keywords": [
     "angular2",
     "webpack",
     "typescript"
   ],
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "homepage": "https://github.com/Poll-me/poll-me-webapp",
+  "bugs": {
+    "url": "https://github.com/Poll-me/poll-me-webapp/issues",
+    "email": "arribasjavier@gmail.com"
+  },
   "license": "MIT",
+  "author": "Francisco Javier Arribas Fernández <arribasjavier@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Poll-me/poll-me-webapp"
+  },
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build:aot": "npm run build:aot:prod",
@@ -147,13 +156,6 @@
     "webpack-dev-server": "2.2.0-rc.0",
     "webpack-md5-hash": "^0.0.5",
     "webpack-merge": "~2.3.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
   },
   "engines": {
     "node": ">= 4.2.1",
