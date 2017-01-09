@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <name> -- <role> -- <github>
+  Francisco Javier Arribas Fernández -- creator/founder -- @mdo2
+
+# THANKS
+
+  <name>
+  Francisco Javier Arribas Fernández -- @mdo2
+  PollMe -- @PollMe
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, Less, CSS3
+  Angular2, TypeScript, Webpack
