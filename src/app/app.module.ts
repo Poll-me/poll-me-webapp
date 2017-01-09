@@ -23,7 +23,6 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 
-// Application wide providers
 const APP_PROVIDERS = [];
 
 @NgModule({
