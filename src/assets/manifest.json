@@ -8,5 +8,7 @@
   "related_applications": [{
     "platform": "web"
   }],
+  "theme_color": "#c72928",
+  "background_color": "#d8403f",
   "icons": []
 }
