@@ -31,7 +31,7 @@ module.exports = {
     { rel: 'shortcut icon', href: '/assets/favicon.ico' },
 
     /** <link> tags for a Web App Manifest **/
-    { rel: 'manifest', href: '/assets/manifest.json' }
+    { rel: 'manifest', href: '/manifest.json' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#b91d47' },
