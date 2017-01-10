@@ -3,13 +3,13 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  <name> -- <role> -- <github>
+  Francisco Javier Arribas Fernández -- creator -- @mdo2
 
 # THANKS
 
-  <name>
-  PatrickJS -- @gdi2290
-  AngularClass -- @AngularClass
+  <name> -- <github>
+  PollMe -- @PollMe  
 
 # TECHNOLOGY COLOPHON
 
