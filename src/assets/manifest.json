@@ -2,7 +2,7 @@
   "name": "PollMe WebApp",
   "description": "The best application for get the information you need for any kind of people.",
   "short_name": "PollMe",
-  "start_url": "/",
+  "start_url": "index.html",
   "display": "standalone",
   "lang": "en-US",
   "related_applications": [{
@@ -10,5 +10,16 @@
   }],
   "theme_color": "#c72928",
   "background_color": "#d8403f",
-  "icons": []
+  "icons": [
+		{
+			"src": "/assets/img/favicon/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/img/favicon/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+  ]
 }
