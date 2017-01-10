@@ -1,4 +1,29 @@
+# Global settings applied to the whole site.
 [build]
-  command = "npm run build:prod"
   publish = "dist"
-  
+  command = "npm run build:aot:prod"
+
+# Production context: All deploys to the main
+# repository branch will inherit these settings.
+# [context.production]
+#   command = "npm run build:aot:prod"
+
+# Deploy Preview context: All Deploy Previews
+# will inherit these settings.
+# [context.deploy-preview]
+#   command = "npm run build:aot:prod"
+
+# Branch Deploy context: All deploys to branches
+# that are not the main one that are not in
+# an active Deploy Preview will inherit these settings.
+[context.branch-deploy]
+  command = "npm run build"
+
+# Specific branch context: Deploys from this branch
+# will take these settings and override their
+# current ones.
+# [context.feature]
+#   command = "make feature"
+
+# [context."features/branch"]
+#   command = "gulp"
