@@ -2,7 +2,7 @@
   "name": "PollMe WebApp",
   "description": "The best application for get the information you need for any kind of people.",
   "short_name": "PollMe",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "display": "standalone",
   "lang": "en-US",
   "theme_color": "#c72928",
