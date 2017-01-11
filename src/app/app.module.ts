@@ -1,42 +1,19 @@
+import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import {
-  NgModule,
-  ApplicationRef
-} from '@angular/core';
-import {
-  removeNgStyles,
-  createNewHosts,
-  createInputTransfer
-} from '@angularclass/hmr';
-import {
-  RouterModule,
-  PreloadAllModules
-} from '@angular/router';
+import { removeNgStyles } from '@angularclass/hmr';
 
-/*
- * Platform and Environment providers/directives/pipes
- */
-import { ENV_PROVIDERS } from './environment';
-import { ROUTES } from './app.routes';
-// App is our top level component
+// Main imports
+import { CoreModule } from './core';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-const APP_PROVIDERS = [];
-
 @NgModule({
-  bootstrap: [ AppComponent ],
-  declarations: [
-    AppComponent
-  ],
+  declarations: [ AppComponent ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CoreModule
   ],
-  providers: [
-    ENV_PROVIDERS,
-    APP_PROVIDERS
-  ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {
 
