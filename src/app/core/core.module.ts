@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 // SERVICES AND PROVIDERS
 import { ENV_PROVIDERS } from '../environment';
 import { FirebaseAppModule } from './firebase';
+import { UserService } from './user';
 
 // PAGE COMPONENTS
 
@@ -15,7 +16,8 @@ import { FirebaseAppModule } from './firebase';
     FirebaseAppModule
   ],
   providers: [
-    ENV_PROVIDERS
+    ENV_PROVIDERS,
+    UserService
   ]
 })
 export class CoreModule {
