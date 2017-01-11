@@ -1,7 +1,7 @@
 # Global settings applied to the whole site.
 [build]
   publish = "dist"
-  command = "npm run build:aot:prod"
+  command = "npm run build:prod"
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
@@ -16,8 +16,8 @@
 # Branch Deploy context: All deploys to branches
 # that are not the main one that are not in
 # an active Deploy Preview will inherit these settings.
-[context.branch-deploy]
-  command = "npm run build"
+# [context.branch-deploy]
+#   command = "npm run build"
 
 # Specific branch context: Deploys from this branch
 # will take these settings and override their
