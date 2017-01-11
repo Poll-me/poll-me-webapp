@@ -7,12 +7,16 @@ import { CoreModule } from './core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Features
+import { UserModule } from './user';
+
 @NgModule({
   declarations: [ AppComponent ],
   imports: [
     BrowserModule,
     CoreModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserModule
   ],
   bootstrap: [ AppComponent ]
 })

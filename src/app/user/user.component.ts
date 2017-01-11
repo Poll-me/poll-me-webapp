@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import * as _ from 'lodash';
 
@@ -9,7 +9,7 @@ import { UserService, User } from '../core/user';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss']
 })
-export class UserComponent implements OnInit {
+export class UserComponent {
 
   public user: User;
 
@@ -17,9 +17,5 @@ export class UserComponent implements OnInit {
     private userService: UserService
   ) {
     userService.currentUser.subscribe((u) => this.user = u);
-  }
-
-  public ngOnInit() {
-    console.log('asd');
   }
 }

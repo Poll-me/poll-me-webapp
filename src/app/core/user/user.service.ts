@@ -11,6 +11,8 @@ export class UserService {
   public currentUser: BehaviorSubject<User> = new BehaviorSubject<User>(undefined);
   public redirectUrl: string;
 
+  constructor() {}
+
   public getUser(): User {
     return this.currentUser.getValue();
   }
