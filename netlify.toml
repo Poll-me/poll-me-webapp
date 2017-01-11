@@ -1,7 +1,7 @@
 # Global settings applied to the whole site.
 [build]
   publish = "dist"
-  command = "npm run build:prod"
+  command = "npm run build:aot:prod"
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
