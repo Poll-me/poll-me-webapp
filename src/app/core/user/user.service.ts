@@ -8,12 +8,8 @@ import { User } from './user';
 @Injectable()
 export class UserService {
 
-  public currentUser: BehaviorSubject<User>;
+  public currentUser: BehaviorSubject<User> = new BehaviorSubject<User>(undefined);
   public redirectUrl: string;
-
-  constructor() {
-    this.currentUser = new BehaviorSubject<User>(undefined);
-  }
 
   public getUser(): User {
     return this.currentUser.getValue();
