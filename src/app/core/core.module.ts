@@ -3,6 +3,7 @@ import { HttpModule } from '@angular/http';
 
 // SERVICES AND PROVIDERS
 import { ENV_PROVIDERS } from '../environment';
+import { FirebaseAppModule } from './firebase';
 
 // PAGE COMPONENTS
 
@@ -10,9 +11,8 @@ import { ENV_PROVIDERS } from '../environment';
 
 @NgModule({
   declarations: [ ],
-  imports: [ ],
-  exports: [
-    HttpModule,
+  imports: [
+    FirebaseAppModule
   ],
   providers: [
     ENV_PROVIDERS
