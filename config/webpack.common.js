@@ -328,7 +328,9 @@ module.exports = function (options) {
         resourceOverride: helpers.root('config/resource-override.js')
       }),
 
-      new OfflinePlugin()
+      new OfflinePlugin({
+        excludes: ['**/.*', '**/*.map', '**/_*']
+      })
 
     ],
 
