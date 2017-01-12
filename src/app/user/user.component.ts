@@ -6,8 +6,7 @@ import { UserService, User } from '../core/user';
 
 @Component({
   selector: 'pm-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  templateUrl: './user.component.html'
 })
 export class UserComponent {
 
