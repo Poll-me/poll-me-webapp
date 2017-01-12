@@ -1,9 +1,15 @@
-# [![PollMe logo](src/assets/img/favicon/mstile-70x70.png)](https://www.poll-me.com)PollMe Web Application
+<p align="center">
+  <a href="https://www.poll-me.com" target="_blank">
+    <img width="192" alt="PollMe WebApp" src="src/assets/img/favicon/android-chrome-192x192.png">
+  </a>
+</p>
+
+# PollMe Web Application
+
 [![GitHub version](https://badge.fury.io/gh/Poll-me%2Fpoll-me-webapp.svg)](https://badge.fury.io/gh/Poll-me%2Fpoll-me-webapp)
 [![GitHub release](https://img.shields.io/github/release/Poll-me/poll-me-webapp.svg)](https://github.com/Poll-me/poll-me-webapp/releases)
 [![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
 [![GitHub commits](https://img.shields.io/github/commits-since/Poll-me/poll-me-webapp/0.0.0.svg)](https://github.com/Poll-me/poll-me-webapp/compare/v0.0.0...develop)
-
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
 This is the awesome app with with you be able to collect in the most easy way any kind of
