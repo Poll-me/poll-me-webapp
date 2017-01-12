@@ -15,6 +15,7 @@
       "es6"
     ],
     "types": [
+      "firebase",
       "hammerjs",
       "jasmine",
       "node",

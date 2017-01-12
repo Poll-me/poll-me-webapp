@@ -7,14 +7,13 @@ import {
   ApplicationRef,
   enableProdMode
 } from '@angular/core';
+
+import * as OfflineRuntime from 'offline-plugin/runtime';
+
 // Environment Providers
 let PROVIDERS: any[] = [
   // common env directives
 ];
-
-// Start the service worker runtime
-import * as OfflineRuntime from 'offline-plugin/runtime';
-OfflineRuntime.install();
 
 // Angular debug tools in the dev console
 // https://github.com/angular/angular/blob/86405345b781a9dc2438c0fbe3e9409245647019/TOOLS_JS.md
@@ -26,6 +25,8 @@ if ('production' === ENV) {
   // Production
   _decorateModuleRef = (modRef: any) => {
     disableDebugTools();
+    // Start the service worker runtime
+    OfflineRuntime.install();
 
     return modRef;
   };

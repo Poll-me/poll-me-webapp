@@ -1,10 +1,4 @@
-/*
- * Angular 2 decorators and services
- */
-import {
-  Component,
-  ViewEncapsulation
-} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 /*
  * App Component
@@ -14,7 +8,7 @@ import {
   selector: 'pm-app',
   encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
-  // styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
