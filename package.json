@@ -48,7 +48,7 @@
     "lint": "npm run lint:ts && npm run lint:md && npm run lint:js",
     "lint:ts": "tslint \"src/**/*.ts\"",
     "lint:js": "eslint --ignore-path .gitignore ./",
-    "lint:md": "markdownlint *.md",
+    "lint:md": "markdownlint *.md docs/**",
     "postversion": "git push && git push --tags",
     "prebuild:dev": "npm run clean:dist",
     "prebuild:prod": "npm run clean:dist",
