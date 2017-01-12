@@ -12,7 +12,7 @@ node_js:
   - "5"
   - "6"
   - "node"
-cache: yarn
+cache: bundler
 
 # Matrix failure enabled for https://github.com/TheLarkInn/LazyParseWebpackPlugin/issues/6
 matrix:
