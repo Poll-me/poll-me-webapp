@@ -16,6 +16,9 @@ cache:
   directories:
     - node_modules
 
+notifications:
+  email: false
+
 # Matrix failure enabled for https://github.com/TheLarkInn/LazyParseWebpackPlugin/issues/6
 matrix:
   fast_finish: true
