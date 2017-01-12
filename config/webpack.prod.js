@@ -7,13 +7,10 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
  */
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const IgnorePlugin = require('webpack/lib/IgnorePlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const V8LazyParseWebpackPlugin = require('v8-lazy-parse-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
 /**
  * Webpack Constants
@@ -28,7 +25,7 @@ const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
   HMR: false
 });
 
-module.exports = function (env) {
+module.exports = function () {
   return webpackMerge(commonConfig({env: ENV}), {
 
     /**

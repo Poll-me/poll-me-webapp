@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const helpers = require('./helpers');
 const ghDeploy = require('./github-deploy');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const ghpages = require('gh-pages');
@@ -40,7 +39,7 @@ module.exports = function (options) {
 
    plugins: [
      function() {
-       this.plugin('done', function(stats) {
+       this.plugin('done', function() {
          console.log('Starting deployment to GitHub.');
 
          const logger = function (msg) {

@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const helpers = require('./helpers');
 
 /*
@@ -20,7 +19,6 @@ const ngcWebpack = require('ngc-webpack');
 /*
  * Webpack Constants
  */
-const HMR = helpers.hasProcessFlag('hot');
 const AOT = helpers.hasNpmFlag('aot');
 const METADATA = {
   title: 'PollMe WebApp',
@@ -34,7 +32,7 @@ const METADATA = {
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
 module.exports = function (options) {
-  isProd = options.env === 'production';
+  var isProd = options.env === 'production';
   return {
 
     /*

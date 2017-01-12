@@ -1,0 +1,8 @@
+{
+    "default": true,
+    "no-duplicate-header": false,
+    "blanks-around-headers": false,
+    "line-length": {
+        "line_length": 100
+    }
+}
