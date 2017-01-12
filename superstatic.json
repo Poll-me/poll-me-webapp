@@ -1,0 +1,24 @@
+{
+    "cleanUrls": [
+    ],
+    "rewrites": [
+        {
+            "source": "**",
+            "destination": "index.html"
+        }
+    ],
+    "redirects": [
+    ],
+    "headers": [
+        {
+            "source": "**/*.*",
+            "headers": [
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                }
+            ]
+        }
+    ],
+    "trailingSlash": false
+}
