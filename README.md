@@ -1,8 +1,8 @@
 # PollMe Web Application
 [![package version](https://img.shields.io/badge/version-0.0.1--alpha.4-blue.svg)](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta)
-[![build status](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta/badges/master/build.svg)](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta/commits/master)
-[![coverage report](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta/badges/master/coverage.svg)](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta/commits/master)
-[![slack channel](https://img.shields.io/badge/slack-%23eqdev-brightgreen.svg)](https://qdqmediaeng.slack.com/messages/eqdev/)
+[![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg?branch=master)](https://travis-ci.org/Poll-me/poll-me-webapp)
+
+[![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
 This is the front-end project for the brand new SPA by QDQ Media to bring to the clients
 the capacity of manage their data and products information in order to get the max benefit
