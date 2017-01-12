@@ -1,13 +1,21 @@
-# PollMe Web Application
+# [![PollMe logo](src/assets/img/favicon/mstile-70x70.png)](https://www.poll-me.com)PollMe Web Application
+[![GitHub version](https://badge.fury.io/gh/Poll-me%2Fpoll-me-webapp.svg)](https://badge.fury.io/gh/Poll-me%2Fpoll-me-webapp)
 [![GitHub release](https://img.shields.io/github/release/Poll-me/poll-me-webapp.svg)](https://github.com/Poll-me/poll-me-webapp/releases)
 [![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
 [![GitHub commits](https://img.shields.io/github/commits-since/Poll-me/poll-me-webapp/0.0.0.svg)](https://github.com/Poll-me/poll-me-webapp/compare/v0.0.0...develop)
 
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
-This is the front-end project for the brand new SPA by QDQ Media to bring to the clients
-the capacity of manage their data and products information in order to get the max benefit
-from the QDQ services.
+This is the awesome app with with you be able to collect in the most easy way any kind of
+opinion or preferece from anyone.
+
+For example:
+
+- Are you trying to know the best date to a plan with you friends?  **POLL THEM!!**
+- Are you trying to decide which Star Wars movie is better?  **POLL THEM!!**
+- Are you trying to find out which friend of yours knows you better? **POLL THEM!!**
+
+[Enter now](https://www.poll-me.com) and try it out, it's **free FOREVER**
 
 The project follow this development technology stack:
 
