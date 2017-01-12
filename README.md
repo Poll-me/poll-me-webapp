@@ -1,6 +1,7 @@
 # PollMe Web Application
-[![package version](https://img.shields.io/badge/version-0.0.1--alpha.1-blue.svg)](https://github.com/Poll-me/poll-me-webapp)
+[![GitHub release](https://img.shields.io/github/release/Poll-me/poll-me-webapp.svg)](https://github.com/Poll-me/poll-me-webapp/releases)
 [![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
+[![GitHub commits](https://img.shields.io/github/commits-since/Poll-me/poll-me-webapp/0.0.0.svg)](https://github.com/Poll-me/poll-me-webapp/compare/v0.0.0...develop)
 
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
