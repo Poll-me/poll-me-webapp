@@ -1,6 +1,6 @@
 {
   "name": "poll-me-webapp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A single page application to view, edit and fill any kind of PollMe quiz or survey",
   "keywords": [
     "angular2",
