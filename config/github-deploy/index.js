@@ -1,7 +1,6 @@
 const execSync = require('child_process').execSync;
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const helpers = require('../helpers');
 
 const REPO_NAME_RE = /Push {2}URL: ((git@github\.com:)|(https:\/\/github\.com\/)).+\/(.+)\.git/;
 

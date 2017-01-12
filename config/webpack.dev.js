@@ -6,7 +6,6 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
  * Webpack Plugins
  */
 const DefinePlugin = require('webpack/lib/DefinePlugin');
-const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 /**
@@ -28,7 +27,7 @@ const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
  *
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
-module.exports = function (options) {
+module.exports = function () {
   return webpackMerge(commonConfig({env: ENV}), {
 
     /**
