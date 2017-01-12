@@ -57,8 +57,9 @@ can run any package script.
 
 ```bash
 # Clone the repo and enter inside
-git clone git@gitlabnew.qdqmedia.com:shared-projects/eqonecta.git
-cd eqonecta
+git clone git@github.com:Poll-me/poll-me-webapp.git
+# by HTTPS: https://github.com/Poll-me/poll-me-webapp.git
+cd poll-me-webapp
 
 # install node dependencies
 npm install
@@ -96,8 +97,11 @@ guideline in order to add new functionality.
 Details are exposed at specific docs [here](docs/architecture.md)
 
 ## Continuous integration (CI)
-The central pillar of development flow, all the commits pushed to the remote gitlab
+The central pillar of development flow, all the commits pushed to the remote github
 repository have to pass the pipeline of the project at CI to can merge to `develop`
 branch and then to `master`.
 
-See the [docs](docs/ci.md).
+The CI of the project is based on [Travis CI](https://travis-ci.org/), you can see the official documentation
+[here](https://docs.travis-ci.com/). The configturation of the project that set how
+the project is checked at CI is `.travis.yml`, if you want to know more about the CI
+configuration for the project see the [official docs](https://docs.travis-ci.com/user/customizing-the-build/).
