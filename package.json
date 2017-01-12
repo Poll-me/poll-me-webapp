@@ -102,7 +102,6 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "~2.4.1",
-    "@types/firebase": "^2.4.31",
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "^2.2.34",
     "@types/node": "^6.0.38",
