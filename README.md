@@ -1,6 +1,6 @@
 # PollMe Web Application
-[![package version](https://img.shields.io/badge/version-0.0.1--alpha.4-blue.svg)](https://gitlabnew.qdqmedia.com/shared-projects/eqonecta)
-[![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg?branch=master)](https://travis-ci.org/Poll-me/poll-me-webapp)
+[![package version](https://img.shields.io/badge/version-0.0.1--alpha.1-blue.svg)](https://github.com/Poll-me/poll-me-webapp)
+[![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
 
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
