@@ -6,6 +6,7 @@ import { removeNgStyles } from '@angularclass/hmr';
 import { CoreModule } from './core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import '../styles/styles.scss';
 
 // Features
 import { UserModule } from './user';
