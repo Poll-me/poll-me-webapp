@@ -1,2 +1,11 @@
+
+// Angular2 Material
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import '~@angular/material/core/theming/prebuilt/indigo-pink.scss';
+// @import '~@angular/material/core/theming/prebuilt/indigo-pink.scss';
+@import '~@angular/material/core/theming/all-theme';
+@include md-core();
+$app-theme-primary: md-palette($md-red);
+$app-theme-accent: md-palette($md-indigo);
+$app-theme-warning: md-palette($md-orange);
+$material-app-theme: md-light-theme($app-theme-primary, $app-theme-accent, $app-theme-warning);
+@include angular-material-theme($material-app-theme);
