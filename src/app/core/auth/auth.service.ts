@@ -1,16 +1,32 @@
 import { Injectable } from '@angular/core';
 
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import * as _ from 'lodash';
 
-import { AngularFireAuth } from 'angularfire2';
+import { AngularFireAuth, AuthProviders, AuthMethods, FirebaseAuthState } from 'angularfire2';
+import { User } from 'firebase';
 
 @Injectable()
 export class AuthService {
 
-  // public currentCredentials: BehaviorSubject<User> = new BehaviorSubject<User>(undefined);
+  public currentAuth: Subject<User> = new Subject<User>();
 
   constructor(private firebaseAuth: AngularFireAuth) {
-    console.log(firebaseAuth);
+    firebaseAuth.subscribe(this.authChanges.bind(this));
+  }
+
+  private authChanges(authState: FirebaseAuthState): void {
+    if (_.isNull(authState)) {
+      this.logAsAnonymous().subscribe((as) => this.currentAuth.next(as.auth));
+    } else {
+      this.currentAuth.next(authState.auth);
+    }
+  }
+
+  private logAsAnonymous(): Observable<FirebaseAuthState> {
+    return Observable.fromPromise(this.firebaseAuth.login({
+      provider: AuthProviders.Anonymous,
+      method: AuthMethods.Anonymous,
+    }) as Promise<any>);
   }
 }

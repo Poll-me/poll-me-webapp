@@ -1,8 +1,15 @@
 export class User {
 
+  public id: string;
+  public name: string;
+  public email: string;
+  public photoUrl: string;
+
   constructor(
-    public name?: string,
-    public email?: string,
-    public type?: string
-  ) {}
+    data?
+  ) {
+    if (data) {
+      Object.assign(this, data);
+    }
+  }
 }
