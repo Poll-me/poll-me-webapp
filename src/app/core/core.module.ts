@@ -1,5 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 
 // SERVICES AND PROVIDERS
@@ -16,6 +17,7 @@ import { UserService } from './user';
   declarations: [ ],
   imports: [
     FirebaseAppModule,
+    FlexLayoutModule.forRoot(),
     MaterialModule.forRoot()
   ],
   providers: [
