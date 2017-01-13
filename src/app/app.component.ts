@@ -1,9 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-/*
- * App Component
- * Top Level Component
- */
 @Component({
   selector: 'pm-app',
   encapsulation: ViewEncapsulation.None,
