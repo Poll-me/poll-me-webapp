@@ -9,6 +9,7 @@
 [![GitHub release](https://img.shields.io/github/release/Poll-me/poll-me-webapp.svg)](https://github.com/Poll-me/poll-me-webapp/releases)
 [![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
+[![Join the chat at https://gitter.im/PollMe/general](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PollMe/general?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This is the awesome app with with you be able to collect in the most easy way any kind of
 opinion or preferece from anyone.
