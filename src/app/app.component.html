@@ -11,11 +11,11 @@
         <!--<span>User</span>-->
       </button>
       <md-menu #navbarUserMenu="mdMenu">
-        <button md-menu-item>
+        <button md-menu-item routerLink="user">
           <md-icon>face</md-icon>
           <span>Profile</span>
         </button>
-        <button *ngIf="!userService.isLogged" md-menu-item>
+        <button *ngIf="!userService.isLogged" routerLink="user/login" md-menu-item>
           <md-icon>input</md-icon>
           <span>Sign in / up</span>
         </button>

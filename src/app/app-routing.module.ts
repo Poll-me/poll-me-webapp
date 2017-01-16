@@ -5,9 +5,8 @@ const routes: Routes = [{
   path: 'user',
   loadChildren: './user#UserModule',
 }, {
-  path: '',
-  redirectTo: 'user',
-  pathMatch: 'full'
+  path: '**',
+  redirectTo: 'user'
 }];
 
 @NgModule({
