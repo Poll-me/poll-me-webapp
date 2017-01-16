@@ -6,20 +6,20 @@
       </figure>
       <span>PollMe</span>
       <div class="flex-spacer"></div>
-      <button *ngIf="!userService.isLogged" md-button routerLink="/user/login">
+      <button md-icon-button [mdMenuTriggerFor]="navbarUserMenu">
         <md-icon>account_circle</md-icon>
-        <span>Sign in</span>
+        <!--<span>User</span>-->
       </button>
-      <button *ngIf="userService.isLogged" md-button [mdMenuTriggerFor]="navbarUserMenu">
-        <md-icon>account_circle</md-icon>
-        <span>User</span>
-      </button>
-      <md-menu *ngIf="userService.isLogged" #navbarUserMenu="mdMenu">
+      <md-menu #navbarUserMenu="mdMenu">
         <button md-menu-item>
           <md-icon>face</md-icon>
           <span>Profile</span>
         </button>
-        <button md-menu-item disabled>
+        <button *ngIf="!userService.isLogged" md-menu-item>
+          <md-icon>input</md-icon>
+          <span>Sign in / up</span>
+        </button>
+        <button *ngIf="userService.isLogged" md-menu-item >
           <md-icon>lock_open</md-icon>
           <span>Log out</span>
         </button>
