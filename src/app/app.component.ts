@@ -1,5 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
+import { User, UserService } from './core/user';
+
 @Component({
   selector: 'pm-app',
   encapsulation: ViewEncapsulation.None,
@@ -8,6 +10,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
 
-  // constructor( ) {}
+  private user: User;
+
+  constructor(public userService: UserService) {
+    userService.currentUser.subscribe((u) => this.user = u);
+  }
 
 }
