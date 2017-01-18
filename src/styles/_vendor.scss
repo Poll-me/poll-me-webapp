@@ -1,8 +1,10 @@
 // Normalize
 @import '~normalize.css/normalize.css';
 
-// Angular2 Material
+// Material Icon Font
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Angular2 Material
 // @import '~@angular/material/core/theming/prebuilt/indigo-pink.scss';
 @import '~@angular/material/core/theming/all-theme';
 @include md-core();
@@ -11,3 +13,6 @@ $app-theme-accent: md-palette($md-indigo);
 $app-theme-warning: md-palette($md-orange);
 $material-app-theme: md-light-theme($app-theme-primary, $app-theme-accent, $app-theme-warning);
 @include angular-material-theme($material-app-theme);
+
+// Firebase UI styles
+@import url('https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css');
