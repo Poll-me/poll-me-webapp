@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   public user: User;
 
-  private readonly fbUIContainerId = 'firebaseui-container';
+  public readonly fbUIContainerId = 'firebaseui-container';
 
   constructor (
     private fbUIService: FirebaseUIService,
