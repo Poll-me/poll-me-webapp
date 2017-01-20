@@ -47,7 +47,7 @@ And the build outputs all the static files that can be easily served from a web 
 ## Requirements
 The only thing you need is:
 
-- Node >= 4.x
+- Node >= 5.x
 - Npm >= 3.x
 
 ## Start working with the project
