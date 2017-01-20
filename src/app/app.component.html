@@ -1,6 +1,30 @@
 <header>
   <nav>
-    <md-toolbar color="primary">PollMe</md-toolbar>
+    <md-toolbar color="primary">  
+      <figure class="navbar-logo">
+        <img src="/assets/img/favicon/android-chrome-192x192.png" alt="">
+      </figure>
+      <span>PollMe</span>
+      <div class="flex-spacer"></div>
+      <button md-icon-button [mdMenuTriggerFor]="navbarUserMenu">
+        <md-icon>account_circle</md-icon>
+        <!--<span>User</span>-->
+      </button>
+      <md-menu #navbarUserMenu="mdMenu">
+        <button md-menu-item routerLink="user">
+          <md-icon>face</md-icon>
+          <span>Profile</span>
+        </button>
+        <button *ngIf="!userService.isLogged" routerLink="user/login" md-menu-item>
+          <md-icon>input</md-icon>
+          <span>Sign in / up</span>
+        </button>
+        <button *ngIf="userService.isLogged" md-menu-item >
+          <md-icon>lock_open</md-icon>
+          <span>Log out</span>
+        </button>
+      </md-menu>
+    </md-toolbar>
   </nav>
 </header>
 <main>

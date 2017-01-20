@@ -8,6 +8,8 @@ import {
 
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
+import { CoreModule } from './core';
+import { SharedModule } from './shared';
 
 describe(`App`, () => {
   let comp: AppComponent;
@@ -17,6 +19,10 @@ describe(`App`, () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AppComponent ],
+      imports: [
+        CoreModule,
+        SharedModule
+      ],
       schemas: [NO_ERRORS_SCHEMA],
       providers: []
     })
