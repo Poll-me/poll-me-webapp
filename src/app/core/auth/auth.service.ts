@@ -15,6 +15,10 @@ export class AuthService {
     firebaseAuth.subscribe(this.authChanges.bind(this));
   }
 
+  public logOut(): Observable<void> {
+    return Observable.fromPromise(this.firebaseAuth.logout());
+  }
+
   private authChanges(authState: FirebaseAuthState): void {
     if (_.isNull(authState)) {
       this.logAsAnonymous().subscribe((as) => this.currentAuth.next(as.auth));

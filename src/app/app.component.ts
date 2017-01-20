@@ -16,4 +16,7 @@ export class AppComponent {
     userService.currentUser.subscribe((u) => this.user = u);
   }
 
+  public logOut() {
+    this.userService.logOut();
+  }
 }

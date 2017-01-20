@@ -31,6 +31,10 @@ export class UserService {
     return !_.isUndefined(user) && !_.some(_.values(user), (val) => !val);
   }
 
+  public logOut() {
+    this.authService.logOut();
+  }
+
   private updateFromAuth(authUser: AuthUser) {
     this.isLogged = !authUser.isAnonymous;
     const user = new User({

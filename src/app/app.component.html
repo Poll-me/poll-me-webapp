@@ -19,7 +19,7 @@
           <md-icon>input</md-icon>
           <span>Sign in / up</span>
         </button>
-        <button *ngIf="userService.isLogged" md-menu-item >
+        <button *ngIf="userService.isLogged" (click)="logOut()" md-menu-item >
           <md-icon>lock_open</md-icon>
           <span>Log out</span>
         </button>
