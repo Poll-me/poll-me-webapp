@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 import * as _ from 'lodash';
 
@@ -10,8 +11,7 @@ export class FirebaseUIService {
 
   private authUIInstance;
   private settings = {
-    siteName: 'experimentOne',
-    signInSuccessUrl: '/',
+    siteName: 'PollMe WebApp',
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.GithubAuthProvider.PROVIDER_ID,
@@ -21,11 +21,12 @@ export class FirebaseUIService {
     ],
     callbacks: {
       signInSuccess: (currentUser, credential, redirectUrl) => {
-        console.log('User signed in succesfully.');
-        return true;
+        this.router.navigate(['/']);
       }
     }
   };
+
+  constructor(private router: Router) {}
 
   public initFirebaseUI(selector: string): void {
     _.delay(() => {
