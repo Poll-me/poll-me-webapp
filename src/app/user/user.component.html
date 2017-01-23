@@ -1,4 +1,29 @@
-<md-icon>account_circle</md-icon>
-<pre>
-  {{ user | json }}
-</pre>
+<div class="mdl-grid">
+  <div class="mdl-cell--2-col-phone mdl-cell--1-offset-phone">
+    <figure class="user-avatar">
+      <img [src]="getUserAvatarUrl()" alt="User avatar">
+    </figure>
+  </div>
+</div>
+<div class="mdl-grid ">
+  <div class="mdl-cell mdl-cell--4-col-phone">
+    <form
+      #userForm="ngForm"
+      >
+      <md-input-container class="mdl-cell mdl-cell--4-col-phone">
+        <input md-input
+          type="text"
+          [(ngModel)]="user.name"
+          name="name"
+          placeholder="Name">
+      </md-input-container>
+      <md-input-container class="mdl-cell mdl-cell--4-col-phone">
+        <input md-input
+          type="email"
+          [(ngModel)]="user.email"
+          name="email"
+          placeholder="Email">
+      </md-input-container>
+    </form>
+  </div>
+</div>

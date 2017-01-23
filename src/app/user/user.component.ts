@@ -12,9 +12,15 @@ export class UserComponent {
 
   public user: User;
 
+  private readonly defaultAvatarUrl: string = '/assets/img/user/default-avatar.png';
+
   constructor (
     private userService: UserService
   ) {
     userService.currentUser.subscribe((u) => this.user = u);
+  }
+
+  public getUserAvatarUrl(): string {
+    return this.user.photoUrl || this.defaultAvatarUrl;
   }
 }
