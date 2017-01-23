@@ -13,7 +13,7 @@ export class FirebaseUIService {
   public loaded: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   private authUIInstance;
-  private started : boolean = false;
+  private started: boolean = false;
   private settings = {
     siteName: 'PollMe WebApp',
     signInOptions: [
