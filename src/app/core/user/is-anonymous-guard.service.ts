@@ -29,9 +29,11 @@ export class IsAnonymousGuard implements CanActivate {
     if (!validUser) {
       userLoggedObservable =
         this.userService.currentUser.skip(1).map((u) => {
-          this.router.navigate(this.fallbackRoute, {
-            replaceUrl: true
-          });
+          if (this.userService.isLogged) {
+            this.router.navigate(this.fallbackRoute, {
+              replaceUrl: true
+            });
+          }
           return !this.userService.isLogged;
         });
     }

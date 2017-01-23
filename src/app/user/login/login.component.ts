@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
 
   public user: User;
 
+  public fbUILoaded: boolean = false;
   public readonly fbUIContainerId = 'firebaseui-container';
 
   constructor (
@@ -21,6 +22,7 @@ export class LoginComponent implements OnInit {
     private userService: UserService
   ) {
     userService.currentUser.subscribe((u) => this.user = u);
+    fbUIService.loaded.subscribe((l) => this.fbUILoaded = l);
   }
 
   public ngOnInit() {
