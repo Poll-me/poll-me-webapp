@@ -1,4 +1,43 @@
-<md-icon>account_circle</md-icon>
-<pre>
-  {{ user | json }}
-</pre>
+<div class="mdl-grid">
+  <div class="mdl-cell--2-col-phone mdl-cell--1-offset-phone">
+    <figure class="user-avatar">
+      <img [src]="getUserAvatarUrl()" alt="User avatar">
+    </figure>
+  </div>
+</div>
+<div class="mdl-grid ">
+  <div class="mdl-cell mdl-cell--4-col-phone">
+    <form
+      #userForm="ngForm"
+      (ngSubmit)="onSubmit()"
+      >
+      <md-input-container class="mdl-cell mdl-cell--4-col-phone">
+        <input md-input
+          type="text"
+          [(ngModel)]="user.name"
+          name="name"
+          [disabled]="!editMode"
+          required
+          placeholder="Name">
+      </md-input-container>
+      <md-input-container class="mdl-cell mdl-cell--4-col-phone">
+        <input md-input
+          type="email"
+          [(ngModel)]="user.email"
+          name="email"
+          disabled
+          placeholder="Email">
+      </md-input-container>
+  <div class="page-actions">
+    <button md-fab *ngIf="editMode" color="primary"
+      [disabled]="userForm.pristine || !userForm.valid"
+      type="submit">
+      <i class="material-icons">save</i>
+    </button>
+    <button md-fab *ngIf="!editMode" color="accent" (click)="editMode=true">
+      <md-icon>mode_edit</md-icon>
+    </button>
+  </div>
+    </form>
+  </div>
+</div>

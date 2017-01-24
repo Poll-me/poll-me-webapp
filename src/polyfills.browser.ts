@@ -32,6 +32,7 @@ import 'zone.js/dist/zone';
 // Typescript emit helpers polyfill
 import 'ts-helpers';
 
+import 'material-design-lite';
 import 'hammerjs';
 
 if ('production' === ENV) {

@@ -21,6 +21,13 @@ export class UserService {
     return this.currentUser.getValue();
   }
 
+  public updateProfileData(user: User): Observable<void> {
+    return this.authService.updateData({
+      displayName: user.name,
+      photoUrl: user.photoUrl
+    });
+  }
+
   public updateUser(newUser: User): User {
     this.currentUser.next(newUser);
     return this.getUser();
@@ -29,6 +36,10 @@ export class UserService {
   public isValid(): boolean {
     const user = this.getUser();
     return !_.isUndefined(user) && !_.some(_.values(user), (val) => !val);
+  }
+
+  public logOut() {
+    this.authService.logOut();
   }
 
   private updateFromAuth(authUser: AuthUser) {

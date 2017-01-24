@@ -1,1 +1,3 @@
-<div [id]="fbUIContainerId"></div>
+<div [id]="fbUIContainerId" fxLayout fxLayoutAlign="center">
+  <md-spinner *ngIf="!fbUILoaded" fxFlex></md-spinner>
+</div>
