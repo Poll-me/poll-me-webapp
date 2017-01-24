@@ -6,24 +6,17 @@
       </figure>
       <span>PollMe</span>
       <div class="flex-spacer"></div>
-      <button md-icon-button [mdMenuTriggerFor]="navbarUserMenu">
+
+      <button id="user-menu-button"
+        class="mdl-button mdl-js-button mdl-button--icon">
         <md-icon>account_circle</md-icon>
-        <!--<span>User</span>-->
       </button>
-      <md-menu #navbarUserMenu="mdMenu">
-        <button md-menu-item routerLink="user">
-          <md-icon>face</md-icon>
-          <span>Profile</span>
-        </button>
-        <button *ngIf="!userService.isLogged" routerLink="user/login" md-menu-item>
-          <md-icon>input</md-icon>
-          <span>Sign in / up</span>
-        </button>
-        <button *ngIf="userService.isLogged" (click)="logOut()" md-menu-item >
-          <md-icon>lock_open</md-icon>
-          <span>Log out</span>
-        </button>
-      </md-menu>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+          for="user-menu-button">
+        <li routerLink="user" class="mdl-menu__item">Profile</li>
+        <li *ngIf="!userService.isLogged" routerLink="user/login" class="mdl-menu__item" routerLink="user/login">Log in</li>
+        <li *ngIf="userService.isLogged" (click)="logOut()" class="mdl-menu__item">Log out</li>
+      </ul>
     </md-toolbar>
   </nav>
 </header>
