@@ -17,6 +17,7 @@
           [(ngModel)]="user.name"
           name="name"
           [disabled]="!editMode"
+          required
           placeholder="Name">
       </md-input-container>
       <md-input-container class="mdl-cell mdl-cell--4-col-phone">
@@ -29,6 +30,7 @@
       </md-input-container>
   <div class="page-actions">
     <button md-fab *ngIf="editMode" color="primary"
+      [disabled]="userForm.pristine || !userForm.valid"
       type="submit">
       <i class="material-icons">save</i>
     </button>

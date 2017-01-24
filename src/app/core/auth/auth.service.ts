@@ -18,6 +18,10 @@ export class AuthService {
     this.currentAuth.subscribe((au) => this.authUser = au);
   }
 
+  public updateData(data: any): Observable<void> {
+    return Observable.fromPromise(this.authUser.updateProfile(data) as Promise<void>);
+  }
+
   public logOut(): Observable<void> {
     return Observable.fromPromise(this.firebaseAuth.logout());
   }

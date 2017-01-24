@@ -21,6 +21,13 @@ export class UserService {
     return this.currentUser.getValue();
   }
 
+  public updateProfileData(user: User): Observable<void> {
+    return this.authService.updateData({
+      displayName: user.name,
+      photoUrl: user.photoUrl
+    }).do(() => this.updateUser(user));
+  }
+
   public updateUser(newUser: User): User {
     this.currentUser.next(newUser);
     return this.getUser();

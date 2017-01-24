@@ -22,7 +22,7 @@ export class UserComponent {
   }
 
   public onSubmit() {
-    console.log('Submit');
+    this.userService.updateProfileData(this.user).subscribe(() => console.log('User updated!'));
   }
 
   public getUserAvatarUrl(): string {
