@@ -4,15 +4,18 @@ import { Observable, Subject } from 'rxjs';
 import * as _ from 'lodash';
 
 import { AngularFireAuth, AuthProviders, AuthMethods, FirebaseAuthState } from 'angularfire2';
-import { User } from 'firebase';
+import { User as AuthUser } from 'firebase';
 
 @Injectable()
 export class AuthService {
 
-  public currentAuth: Subject<User> = new Subject<User>();
+  public currentAuth: Subject<AuthUser> = new Subject<AuthUser>();
+
+  private authUser: AuthUser;
 
   constructor(private firebaseAuth: AngularFireAuth) {
     firebaseAuth.subscribe(this.authChanges.bind(this));
+    this.currentAuth.subscribe((au) => this.authUser = au);
   }
 
   public logOut(): Observable<void> {
