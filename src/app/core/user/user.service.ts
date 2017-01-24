@@ -25,7 +25,7 @@ export class UserService {
     return this.authService.updateData({
       displayName: user.name,
       photoUrl: user.photoUrl
-    }).do(() => this.updateUser(user));
+    });
   }
 
   public updateUser(newUser: User): User {
