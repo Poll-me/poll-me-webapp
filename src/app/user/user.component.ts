@@ -11,6 +11,7 @@ import { UserService, User } from '../core/user';
 export class UserComponent {
 
   public user: User;
+  public editMode: boolean = false;
 
   private readonly defaultAvatarUrl: string = '/assets/img/user/default-avatar.png';
 
