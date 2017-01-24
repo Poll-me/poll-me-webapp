@@ -9,6 +9,7 @@
   <div class="mdl-cell mdl-cell--4-col-phone">
     <form
       #userForm="ngForm"
+      (ngSubmit)="onSubmit()"
       >
       <md-input-container class="mdl-cell mdl-cell--4-col-phone">
         <input md-input
@@ -22,8 +23,14 @@
           type="email"
           [(ngModel)]="user.email"
           name="email"
+          disabled
           placeholder="Email">
       </md-input-container>
+      <div class="material-page-actions">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <i class="material-icons">mode_edit</i>
+        </button>
+      </div>
     </form>
   </div>
 </div>

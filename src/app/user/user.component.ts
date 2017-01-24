@@ -20,6 +20,10 @@ export class UserComponent {
     userService.currentUser.subscribe((u) => this.user = u);
   }
 
+  public onSubmit() {
+    console.log('Submit');
+  }
+
   public getUserAvatarUrl(): string {
     return this.user.photoUrl || this.defaultAvatarUrl;
   }

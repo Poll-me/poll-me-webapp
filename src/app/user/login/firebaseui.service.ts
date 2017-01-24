@@ -25,7 +25,8 @@ export class FirebaseUIService {
     ],
     callbacks: {
       signInSuccess: (currentUser, credential, redirectUrl) => {
-        this.router.navigate(['/']);
+        // this.router.navigate(['/']);
+        location.href = '/';
       },
       uiShown: () => {
         this.loaded.next(true);
