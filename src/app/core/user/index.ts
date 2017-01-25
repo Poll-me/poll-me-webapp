@@ -1,3 +1,3 @@
 export * from './user.service';
-export * from './is-anonymous-guard.service';
+export * from './guards';
 export * from './user';

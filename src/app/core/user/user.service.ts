@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Observable, BehaviorSubject } from 'rxjs';
 import * as _ from 'lodash';
@@ -13,7 +14,9 @@ export class UserService {
   public currentUser: BehaviorSubject<User> = new BehaviorSubject<User>(new User());
   public isLogged: boolean = false;
 
-  constructor(private authService: AuthService) {
+  constructor(
+    private authService: AuthService,
+    private router: Router) {
     authService.currentAuth.subscribe(this.updateFromAuth.bind(this));
   }
 
@@ -39,7 +42,10 @@ export class UserService {
   }
 
   public logOut() {
-    this.authService.logOut();
+    this.authService.logOut().subscribe(() => {
+      console.log('Logged out!!');
+      this.router.navigate(['/']);
+    });
   }
 
   private updateFromAuth(authUser: AuthUser) {
