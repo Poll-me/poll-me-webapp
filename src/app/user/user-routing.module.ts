@@ -2,16 +2,20 @@ import { NgModule }     from '@angular/core';
 import { Routes,
          RouterModule } from '@angular/router';
 
-import { IsAnonymousGuard } from '../core/user';
+import { IsLoggedGuard, IsNotLoggedGuard } from '../core/user';
 
 import { UserComponent } from './user.component';
 import { LoginComponent } from './login';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: UserComponent },
   {
+    path: '',
+    canActivate: [ IsLoggedGuard ],
+    pathMatch: 'full',
+    component: UserComponent
+  }, {
     path: 'login',
-    canActivate: [ IsAnonymousGuard ],
+    canActivate: [ IsNotLoggedGuard ],
     component: LoginComponent
   },
   { path: 'profile', redirectTo: '' },
@@ -19,7 +23,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [ RouterModule.forChild(routes) ],
-  providers: [ IsAnonymousGuard ],
+  providers: [
+    IsLoggedGuard,
+    IsNotLoggedGuard
+  ],
   exports: [ RouterModule ]
 })
 export class UserRoutingModule {}
