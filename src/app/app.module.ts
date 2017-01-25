@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import '../styles/styles.scss';
 
 // Features
+import { HomeModule } from './home';
 import { UserModule } from './user';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { UserModule } from './user';
     CoreModule,
     SharedModule,
     AppRoutingModule,
+    HomeModule,
     UserModule
   ],
   bootstrap: [ AppComponent ]
