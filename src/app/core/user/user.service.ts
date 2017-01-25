@@ -43,7 +43,6 @@ export class UserService {
 
   public logOut() {
     this.authService.logOut().subscribe(() => {
-      console.log('Logged out!!');
       this.router.navigate(['/']);
     });
   }
