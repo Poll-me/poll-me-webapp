@@ -17,7 +17,7 @@ import { UserService } from './user';
   declarations: [ ],
   imports: [
     FirebaseAppModule,
-    FlexLayoutModule.forRoot(),
+    FlexLayoutModule,
     MaterialModule.forRoot()
   ],
   providers: [
