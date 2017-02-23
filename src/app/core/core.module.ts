@@ -7,6 +7,7 @@ import { MaterialModule } from '@angular/material';
 import { ENV_PROVIDERS } from '../environment';
 import { FirebaseAppModule } from './firebase';
 import { AuthService } from './auth';
+import { DatabaseService } from './database';
 import { UserService } from './user';
 
 // PAGE COMPONENTS
@@ -23,6 +24,7 @@ import { UserService } from './user';
   providers: [
     ENV_PROVIDERS,
     AuthService,
+    DatabaseService,
     UserService
   ]
 })

@@ -6,6 +6,7 @@ import * as _ from 'lodash';
 import { User as AuthUser } from 'firebase';
 
 import { AuthService } from '../auth';
+import { DatabaseService } from '../database';
 import { User } from './user';
 
 @Injectable()
@@ -16,6 +17,7 @@ export class UserService {
 
   constructor(
     private authService: AuthService,
+    private dbService: DatabaseService,
     private router: Router) {
     authService.currentAuth.subscribe(this.updateFromAuth.bind(this));
   }
