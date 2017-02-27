@@ -20,6 +20,7 @@ export class UserService {
     private dbService: DatabaseService,
     private router: Router) {
     authService.currentAuth.subscribe(this.updateFromAuth.bind(this));
+    dbService.listQuery('users').subscribe((data) => console.log(data));
   }
 
   public getUser(): User {
