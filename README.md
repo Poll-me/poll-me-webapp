@@ -8,6 +8,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/Poll-me/poll-me-webapp.svg)](https://github.com/Poll-me/poll-me-webapp/releases)
 [![Build Status](https://travis-ci.org/Poll-me/poll-me-webapp.svg)](https://travis-ci.org/Poll-me/poll-me-webapp)
+![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)
 [![Build Status](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
 
 This is the awesome app with with you be able to collect in the most easy way any kind of
